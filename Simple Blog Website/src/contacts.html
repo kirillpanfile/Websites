@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="ab-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Blog</title>
+  </head>
+
+  <body class="ab-body">
+    <header class="ab-header">
+      <div class="ab-row" style="justify-content: space-between">
+        <div class="ab-logo text-black">Josh's Blog</div>
+        <button type="button" class="ab-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="ab-overlay" id="overlay"></div>
+        <nav class="ab-nav" id="navbar">
+          <ul class="ab-menu">
+            <li class="ab-menu-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="ab-menu-item">
+              <a href="info.html">Information</a>
+            </li>
+            <li class="ab-menu-item">
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="ab-menu-item">
+              <a href="contacts.html">Contacts</a>
+            </li>
+            <li class="ab-menu-item">
+              <a href="news.html">News</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="ab-wrapper">
+      <div class="bg" style="background: url(./img/bg.png)">
+        <section class="ab-section ab-container" style="min-height: 20vh">
+          <div class="ab-section-wrapper">
+            <h1 class="ab-title-1 center mb2 text-white">Contacts</h1>
+          </div>
+        </section>
+      </div>
+
+      <section class="ab-section">
+        <div class="ab-section-wrapper ab-container">
+          <form action="" method="get">
+            <label for="name"> First Name </label>
+            <input id="name" type="text" />
+            <label for="sname"> Last Name </label>
+            <input id="sname" type="text" />
+            <label for="email"> Email </label>
+            <input id="email" type="email" />
+            <label for="otions"> Select an Option</label>
+            <select id="options" type="text" />
+            <option value="Business">Business Question</option>
+            <option value="Personal">Personal Question</option>
+            <option value="Non-Profit">Non-Profit Question</option>
+            </select>
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Type it here..." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+
+      <section class="ab-section vertical-center center">
+        <h2 class="ab-title-4">Josh's Blog</h2>
+      </section>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/fontpro.js"></script>
+  </body>
+</html>
